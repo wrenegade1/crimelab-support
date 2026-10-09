@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crime Lab — Support</title>
+<meta name="description" content="Support, contact and known issues for Crime Lab, a cozy detective puzzler for iPhone and iPad.">
+<style>
+  :root {
+    --bg: #f6f1e4;
+    --paper: #fbf7ec;
+    --ink: #22201c;
+    --muted: #6b6457;
+    --accent: #a4322b;
+    --rule: #d9d1bd;
+    --tape: #e8d59a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15130f;
+      --paper: #1c1a16;
+      --ink: #ede7d6;
+      --muted: #9a9282;
+      --accent: #e26b60;
+      --rule: #2e2a22;
+      --tape: #5a4a26;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15130f;
+    --paper: #1c1a16;
+    --ink: #ede7d6;
+    --muted: #9a9282;
+    --accent: #e26b60;
+    --rule: #2e2a22;
+    --tape: #5a4a26;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 16px 96px;
+  }
+  header {
+    position: relative;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 36px 28px 28px;
+    box-shadow: 0 2px 0 var(--rule);
+  }
+  header::before {
+    content: "";
+    position: absolute;
+    top: -14px; left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 110px; height: 24px;
+    background: var(--tape);
+    opacity: 0.85;
+  }
+  .eyebrow {
+    font-family: "Courier New", monospace;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+  .tagline {
+    color: var(--muted);
+    margin: 0;
+    font-style: italic;
+  }
+  section {
+    margin-top: 36px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 24px 28px;
+  }
+  h2 {
+    font-family: "Courier New", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 13px;
+    color: var(--accent);
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 12px; }
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  a:hover { text-decoration-thickness: 2px; }
+  ul { padding-left: 20px; margin: 0 0 4px; }
+  li { margin-bottom: 6px; }
+  .contact {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    text-decoration: none;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    transition: background .15s, color .15s;
+  }
+  .contact:hover {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .meta {
+    margin-top: 36px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    font-family: "Courier New", monospace;
+    letter-spacing: 0.08em;
+  }
+  .stamp {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 4px 10px;
+    border: 1px dashed var(--muted);
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Case File · Support Desk</p>
+    <h1>Crime Lab</h1>
+    <p class="tagline">A cozy detective puzzler. Every case is new.</p>
+  </header>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Hit a bug, lost progress, or have a case idea you want in the next build? Reach out and I'll get back to you — usually within a day or two.</p>
+    <p><a class="contact" href="mailto:warren.zajac@gmail.com?subject=Crime%20Lab%20Support">warren.zajac@gmail.com</a></p>
+    <p style="margin-top:14px;color:var(--muted);font-size:14px">When you email, it helps to include:</p>
+    <ul>
+      <li>Device model (e.g. iPhone 15, iPad Air)</li>
+      <li>iOS version</li>
+      <li>App version (visible in the Settings screen inside the app)</li>
+      <li>A short description — "I tapped X and Y happened" is perfect</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Known Issues</h2>
+    <ul>
+      <li>Audio toggle UI is temporarily missing from Settings — being restored in the next build.</li>
+      <li>Some suspect portraits may not perfectly match role tags (archetype coherence pass is in progress).</li>
+    </ul>
+    <p style="color:var(--muted);font-size:14px;margin-top:14px">Checked against build 1.0. If you see something that isn't listed here, it's a new one — please tell me.</p>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>Crime Lab stores your progress on your device. The app does not collect, transmit, or share personal information. There are no ads, no third-party trackers, and no account sign-up.</p>
+    <p>If you email support, your email address is used only to reply and is not kept beyond that conversation.</p>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <p><strong>Can I replay a case?</strong><br>
+    Cases are generated per playthrough — you can start a new one anytime, but a specific case won't come back the same way. That's the design.</p>
+    <p><strong>Does it work on iPad?</strong><br>
+    Yes. iPhone and iPad, iOS 16 and newer. Portrait only for now.</p>
+    <p><strong>How do I join the beta?</strong><br>
+    If you've been sent a TestFlight invite link, tap it on your iPhone or iPad and install Apple's free TestFlight app when prompted. If you'd like an invite, email me.</p>
+  </section>
+
+  <p class="meta">
+    &copy; 2026 Warren Zajac<br>
+    <span class="stamp">Case Open · v1.0</span>
+  </p>
+
+</div>
+</body>
+</html>
