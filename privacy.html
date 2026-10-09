@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Crime Lab — Privacy Policy</title>
-<meta name="description" content="Privacy policy for Crime Lab. No data collection, no tracking, no ads.">
+<meta name="description" content="Privacy policy for Crime Lab. What is collected, why, and how it is handled.">
 <meta name="robots" content="noai, noimageai">
 <meta name="GPTBot" content="noindex">
 <meta name="ClaudeBot" content="noindex">
@@ -104,6 +104,11 @@
     padding-bottom: 10px;
     border-bottom: 1px solid var(--rule);
   }
+  h3 {
+    font-size: 16px;
+    margin: 18px 0 6px;
+    letter-spacing: 0.02em;
+  }
   p { margin: 0 0 12px; }
   a {
     color: var(--accent);
@@ -113,6 +118,25 @@
   a:hover { text-decoration-thickness: 2px; }
   ul { padding-left: 20px; margin: 0 0 4px; }
   li { margin-bottom: 6px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 12px;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    font-family: "Courier New", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 11px;
+    color: var(--muted);
+  }
   .meta {
     margin-top: 36px;
     text-align: center;
@@ -150,26 +174,91 @@
 
   <section>
     <h2>Summary</h2>
-    <p>Crime Lab does not collect, transmit, store on any server, sell, share, or trade any personal information. There are no accounts, no logins, no analytics, no advertising, and no third-party trackers in the app.</p>
-    <p>If that's all you need to know, you can stop reading.</p>
+    <p>Crime Lab collects a limited amount of anonymous data to help us keep the app stable, understand how features are used, and fix bugs. We do not collect your name, email, contacts, photos, precise location, or any other personally identifying information from inside the app. We do not sell or share data with advertisers. We do not track you across other apps or websites.</p>
+    <p>The sections below spell out exactly what is collected, why, and how it is handled.</p>
   </section>
 
   <section>
-    <h2>What stays on your device</h2>
-    <p>Your game progress — unlocked cases, saved detective-board state, badges and settings — is stored locally on your iPhone or iPad using Apple's standard on-device storage. It is not uploaded anywhere. If you delete the app, that data is deleted with it.</p>
-    <p>If you use iCloud with your Apple ID, iOS may back up app data to your private iCloud account as part of standard device backups. That data is encrypted and controlled by Apple under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's privacy policy</a>, not ours.</p>
+    <h2>Purpose: Analytics</h2>
+    <p>All of the data categories listed below are collected for a single purpose: <strong>analytics</strong>, as Apple defines that term in the App Privacy framework &mdash; <em>using data to evaluate user behavior, including to understand the effectiveness of existing product features, plan new features, or measure audience size or characteristics</em>.</p>
+    <p>None of this data is used for advertising, third-party marketing, personalized recommendations outside the app, or cross-app or cross-site tracking.</p>
   </section>
 
   <section>
-    <h2>What we do not do</h2>
+    <h2>What we collect</h2>
+    <p>The following categories of data may be collected while you use Crime Lab:</p>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>What it is</th><th>Used for</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Coarse Location</strong></td>
+          <td>Approximate location at a resolution lower than three decimal places of latitude and longitude (roughly city or region level, not street level).</td>
+          <td>Regional balancing and understanding where the player base is, broadly.</td>
+        </tr>
+        <tr>
+          <td><strong>Device ID</strong></td>
+          <td>An anonymous identifier associated with your device or installation. Not tied to your name, email, or Apple ID.</td>
+          <td>Grouping anonymous crash and diagnostic reports from the same install so a single bug does not look like many bugs.</td>
+        </tr>
+        <tr>
+          <td><strong>Product Interaction</strong></td>
+          <td>Which features of the app are used — for example, how often cases are opened, which mini-games are played, when the accusation wizard is used.</td>
+          <td>Deciding what to improve, what to cut, and what to balance.</td>
+        </tr>
+        <tr>
+          <td><strong>Other Usage Data</strong></td>
+          <td>Non-interaction usage signals such as session length and screen transitions.</td>
+          <td>Spotting UX friction and informing design.</td>
+        </tr>
+        <tr>
+          <td><strong>Crash Data</strong></td>
+          <td>Stack traces, exception types, and the state of the app at the moment of a crash.</td>
+          <td>Diagnosing and fixing crashes.</td>
+        </tr>
+        <tr>
+          <td><strong>Performance Data</strong></td>
+          <td>App launch time, frame rate, memory and energy footprint, hangs.</td>
+          <td>Finding slowdowns and keeping the app responsive on older devices.</td>
+        </tr>
+        <tr>
+          <td><strong>Other Diagnostic Data</strong></td>
+          <td>Non-crash diagnostic signals such as logged warnings and recoverable errors.</td>
+          <td>Finding and fixing non-fatal issues before they become crashes.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>All of the above is collected in a form that is <strong>not linked to your identity</strong>. We do not combine any of it with your name, email, Apple ID, contacts, or any other data that would identify you as a person.</p>
+  </section>
+
+  <section>
+    <h2>What we do not collect or do</h2>
     <ul>
-      <li>No account creation, sign-in, or user profiles.</li>
-      <li>No ad networks, no ad SDKs, no ad personalization.</li>
-      <li>No analytics SDKs (no Firebase Analytics, no Mixpanel, no AppsFlyer, no third-party crash reporters).</li>
-      <li>No social-media SDKs, no cross-app tracking, no App Tracking Transparency prompt because there is nothing to track.</li>
-      <li>No in-app purchases that transmit personal data.</li>
-      <li>No contact-list, photos, location, microphone, camera, or health-data access.</li>
+      <li>No real name, email address, phone number, mailing address, or Apple ID is collected inside the app.</li>
+      <li>No contacts, photos, calendar, health, financial, or messaging data.</li>
+      <li>No precise (GPS-level) location.</li>
+      <li>No camera or microphone access.</li>
+      <li>No advertising networks, ad SDKs, or ad personalization.</li>
+      <li>No sale or sharing of data with third parties for their own marketing.</li>
+      <li>No tracking across other apps or websites (no App Tracking Transparency prompt is shown because no cross-app tracking takes place).</li>
+      <li>No account creation. No login. No social-media SDKs.</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Who processes the data</h2>
+    <p>The data categories above are processed by:</p>
+    <ul>
+      <li><strong>Apple</strong>, through its standard diagnostic and analytics services available to developers (for example App Analytics, crash reporting through Xcode, and MetricKit). Apple is the data processor for these flows and handles them under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>. You can opt out of sharing diagnostics with developers at any time in <em>Settings &rarr; Privacy &amp; Security &rarr; Analytics &amp; Improvements &rarr; Share with App Developers</em>.</li>
+      <li><strong>The developer</strong> (Warren Zajac) who receives aggregated and anonymous reports from the services above to improve the app.</li>
+    </ul>
+    <p>Data is not sold, rented, or shared with any other third party.</p>
+  </section>
+
+  <section>
+    <h2>Your game progress</h2>
+    <p>Your game progress — unlocked cases, saved detective-board state, badges, and settings — is stored locally on your iPhone or iPad using Apple's standard on-device storage. It is not uploaded to our servers. If you use iCloud with your Apple ID, iOS may back up this data to your private iCloud account; that backup is encrypted and controlled by Apple under Apple's privacy policy, not ours.</p>
   </section>
 
   <section>
@@ -179,23 +268,22 @@
 
   <section>
     <h2>Children</h2>
-    <p>Crime Lab is suitable for a general audience. Because the app collects no data at all, it does not knowingly or unknowingly collect information from children under 13 (COPPA) or children under 16 in the EEA/UK (GDPR). No parental consent is required because there is nothing to consent to.</p>
+    <p>Crime Lab is suitable for a general audience and is not directed to children under 13. The data categories collected are anonymous and not combined with identifying information, so no personal data of children is knowingly collected in a form that could identify a child. If you are a parent or guardian and believe your child under 13 has provided information through the app that identifies them personally, please contact us using the support page and we will take appropriate action.</p>
   </section>
 
   <section>
-    <h2>Your rights (CCPA / GDPR summary)</h2>
-    <p>Because Crime Lab collects no personal information:</p>
-    <ul>
-      <li>There is no personal data to request a copy of, correct, or delete.</li>
-      <li>There is no personal data sold or shared, so there is nothing to opt out of.</li>
-      <li>There is no automated decision-making or profiling.</li>
-    </ul>
-    <p>If this changes in the future, this page will be updated and the effective date above will reflect the change.</p>
+    <h2>Your choices</h2>
+    <h3>Turning diagnostics off (iOS)</h3>
+    <p>You can disable the sharing of diagnostic and usage data with the developer at the system level: <em>Settings &rarr; Privacy &amp; Security &rarr; Analytics &amp; Improvements</em>. Turning <em>Share with App Developers</em> off stops Apple from sending this data to us. The app itself keeps working.</p>
+    <h3>GDPR (EEA / UK)</h3>
+    <p>Under GDPR, the legal basis for processing the data categories above is our legitimate interest in keeping the app stable and improving it. Because the data is not linked to your identity, we are unable to look up or export the data of a specific person — but you can withdraw consent for the collection at any time by turning off <em>Share with App Developers</em> as above, or by uninstalling the app.</p>
+    <h3>CCPA / CPRA (California)</h3>
+    <p>We do not sell or share personal information as defined by CCPA/CPRA. No opt-out link is required under these laws, and no user-privacy-choices page is needed.</p>
   </section>
 
   <section>
     <h2>Changes to this policy</h2>
-    <p>If the app's data practices ever change — for example, if a future version adds optional cloud sync or in-app purchases — this policy will be revised before that version ships, with the effective date updated at the top of the page.</p>
+    <p>If the app's data practices change — for example, if a future version adds optional cloud sync or in-app purchases — this policy will be revised before that version ships, with the effective date at the top of the page updated to reflect the change.</p>
   </section>
 
   <section>
@@ -206,7 +294,7 @@
 
   <p class="meta">
     &copy; 2026 Warren Zajac<br>
-    <span class="stamp">Policy v1.0 · 2026-10-09</span>
+    <span class="stamp">Policy v1.1 · 2026-10-09</span>
   </p>
 
 </div>
