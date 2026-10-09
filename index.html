@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Crime Lab — Support</title>
 <meta name="description" content="Support, contact and known issues for Crime Lab, a cozy detective puzzler for iPhone and iPad.">
+<meta name="robots" content="noai, noimageai">
+<meta name="GPTBot" content="noindex">
+<meta name="ClaudeBot" content="noindex">
+<meta name="Google-Extended" content="noindex">
 <style>
   :root {
     --bg: #f6f1e4;
@@ -154,7 +158,14 @@
   <section>
     <h2>Contact</h2>
     <p>Hit a bug, lost progress, or have a case idea you want in the next build? Reach out and I'll get back to you — usually within a day or two.</p>
-    <p><a class="contact" href="mailto:warren.zajac@gmail.com?subject=Crime%20Lab%20Support">warren.zajac@gmail.com</a></p>
+    <p>
+      <a id="contact-link" class="contact" href="#" rel="nofollow noindex noai">
+        <span id="contact-label">Show contact email</span>
+      </a>
+    </p>
+    <noscript>
+      <p style="color:var(--muted);font-size:14px">JavaScript is disabled. Contact: <em>warren dot zajac at gmail dot com</em></p>
+    </noscript>
     <p style="margin-top:14px;color:var(--muted);font-size:14px">When you email, it helps to include:</p>
     <ul>
       <li>Device model (e.g. iPhone 15, iPad Air)</li>
@@ -195,5 +206,26 @@
   </p>
 
 </div>
+<script>
+  (function () {
+    var link = document.getElementById("contact-link");
+    var label = document.getElementById("contact-label");
+    if (!link || !label) return;
+    var user = ["w","a","r","r","e","n",".","z","a","j","a","c"].join("");
+    var host = ["g","m","a","i","l",".","c","o","m"].join("");
+    var at = String.fromCharCode(64);
+    var subject = String.fromCharCode(63) + "subject=Crime" + String.fromCharCode(37) + "20Lab" + String.fromCharCode(37) + "20Support";
+    var revealed = false;
+    link.addEventListener("click", function (e) {
+      if (!revealed) {
+        e.preventDefault();
+        var email = user + at + host;
+        link.href = ["mail","to:"].join("") + email + subject;
+        label.textContent = email;
+        revealed = true;
+      }
+    });
+  })();
+</script>
 </body>
 </html>
